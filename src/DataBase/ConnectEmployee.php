@@ -2,12 +2,15 @@
 $serverName = "localhost";
 $userName = "root";
 $password = "";
-$dataBase = "task-manager";
-$tabl = "tabl_CreateTask";
+$dataBase = "company";
+$tabl = "employee";
 
 $mysql = new mysqli($serverName, $userName, $password, $dataBase);
 $mysql->query("SET NAMES utf8");
 
 if ($mysql->connect_error) {
     die("Ошибка подключения к базе данных: " . $mysql->connect_error);
+}
+else{
+    echo "Подлючение удалось";
 }
