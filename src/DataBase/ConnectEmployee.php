@@ -11,6 +11,4 @@ $mysql->query("SET NAMES utf8");
 if ($mysql->connect_error) {
     die("Ошибка подключения к базе данных: " . $mysql->connect_error);
 }
-else{
-    echo "Подлючение удалось";
-}
+echo "Подключение удалось";
